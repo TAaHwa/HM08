@@ -5,7 +5,7 @@
 - HM08_sitelist.html : 홈피 링크 네비게이터, 링크로 구성
     - HM08_info.html : 나의 소개
     - HM08_day : 나의 하루 소개
-    - HM08_singer : 내가 가장 좋아하는 가수
+    - HM08_singer : 내가 가장 좋아하는 노래
     - HM08_trip : 내가 여행가고 싶은 나라
     - HM08_html5 : HTML5 강의 홈페이지
 
