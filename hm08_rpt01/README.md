@@ -16,4 +16,6 @@
     -image : 이미지를 삽입
     -list : 리스트 나열
     -hyperlink : 특정 사이트로 이동하게 해주는 링크
+    -iframe : 다른 html페이지 삽입
+    -media : 오디오,비디오 등 삽입
     
