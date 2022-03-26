@@ -7,7 +7,7 @@
     - HM08_day : 나의 하루 소개
     - HM08_song : 내가 가장 좋아하는 노래
     - HM08_country : 내가 여행가고 싶은 나라
-    - HM00_html5 : HTML5 강의 홈페이지
+    - github.com/RedWoods : HTML5 강의 홈페이지
 
 ## 사용한 HTML 기술
     -table : 여러 수치를 표를 만들어 정리
