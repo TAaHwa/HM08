@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hmnn : CSS3 advanced</title>
+		<style>
+			#fixed {
+				position: fixed;
+				top: 70px;
+				left: 160px;
+				width: 200px;
+				padding: 5px;
+				background:rgba(0, 0, 0, 0.086);
+				color: #ffffff;
+			}
+			#fixed2 {
+				position: fixed;
+				bottom: 50px;
+				left: 400px;
+				width: 100px;
+				padding: 5px;
+				background: black;
+				color: white;
+			}
+			
+			body{
+                background-image:url(https://d3mcojo3jv0dbr.cloudfront.net/2018/12/16/22/36/35ce3466a323b7c46f2a6bbae354b05d.gif?w=600&h=300&q=65) ;
+            }
+
+			  @keyframes textC{
+				0%{color: aliceblue;}
+				30%{color: pink;}
+				100%{color: rgb(189, 119, 162);}
+				50%{color: rgb(121, 97, 112);}
+				0%{color: aliceblue;}
+			}
+			div{
+				animation-name:textC;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+			}
+			div2 {
+				display: inline-block;
+				position:absolute ; /* 절대 배치 */
+				border: 1px solid red;
+			}
+			div2 > p {
+				display: inline-block; /* div의 자식 p */
+				position:absolute ; /* 절대 배치 */
+				height: 20px;
+				width: 16px;
+				background: green;
+			
+			}
+			
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<h3> Merry Christmas! </h3>
+			
+		<img src="media/tree_chris.webp"
+		width="500" height="600"
+		alt="크리스마스 트리">
+		<div id="fixed">
+			예수님이 탄생하셨습니다.
+		</div>
+		<div1 id="fixed2">
+			hm08, 김태화
+		</div1>
+		<div2>
+		
+		
+			<p style="left:-480px; top:20px; color: red; border: 6px;">
+				M
+			</p>
+			
+			<p style="left:-480px; top:60px;color: red;border: 6px;">
+				E
+			</p>
+			<p style="left:-480px; top:100px;color: red;border: 6px;">
+				R
+			</p>
+			<p style="left:-480px; top:140px;color: red;border: 6px;">
+				R
+			</p>
+			<p style="left:-480px; top:180px;color: red;border: 6px;">
+				Y
+			</p>
+			<p style="left:-40px; top:20px;color: red;border: 6px;">
+				C
+			</p>
+			<p style="left:-40px; top:60px;color: red;border: 6px;">
+				H
+			</p>
+			<p style="left:-40px; top:100px;color: red;border: 6px;">
+				R
+			</p>
+			<p style="left:-40px; top:140px;color: red;border: 6px;">
+				I
+			</p>
+			<p style="left:-40px; top:180px;color: red;border: 6px;">
+				S
+			</p>
+			<p style="left:-40px; top:220px;color: red;border: 6px;">
+				T
+			</p>
+			<p style="left:-40px; top:260px;color: red;border: 6px;">
+				M
+			</p>
+			<p style="left:-40px; top:300px;color: red;border: 6px;">
+				A
+			</p>
+			<p style="left:-40px; top:340px;color: red;border: 6px;">
+				S
+			</p>
+		</div2>
+	</body>
+
+</html>
