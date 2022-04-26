@@ -12,6 +12,7 @@
  -mung.html:멍 때리기 동호회 소개
 ## 사용한 HTML 기술
  -form태그:<header>,<nav>,<section>,<article>,<footer>,<aside>로 나뉘며 
+  
  -style태그:글자색 크기 바탕화면에 색,이미지 등을 입힐 수 있고 특정 위치에 고정시킬 수도 있다. 또한@keyframes를 이용하여 애니메이션 효과를 연출 할 수 있다.
  -input태그: 입력을 받아야 할때 사용
  -audio태그:음악 삽입
@@ -27,4 +28,5 @@
  -iframe태그:html페이지 내에 다른 html페이지 삽입 할 때 사용
  -placeholder>태그:텍스트 형식을 보여줌
  -button:버튼 만들기
+  
   
