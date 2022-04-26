@@ -1,8 +1,8 @@
 # HM08 두번째 홈피 프로젝트
 ## 파일구조 및 설명
- -HM08_Rpt02.html:홈페이지
- -best3.html:내가 가장 좋아하는 가수3명의 노래3개
- -trreecrd.html:크리스마스 파티 초대장
+  -HM08_Rpt02.html:홈페이지
+  -best3.html:내가 가장 좋아하는 가수3명의 노래3개
+  -trreecrd.html:크리스마스 파티 초대장
  -tree.html:크리스마스 파티 초대장을 꾸며주는 트리
  -info.html:나의 정보
  -day.html:나의 하루
