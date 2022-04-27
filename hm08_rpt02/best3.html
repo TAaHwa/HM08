@@ -11,20 +11,40 @@
             background-color: gray;
         }
     </style>
-    <script></script>
+    <script>
+ 		      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+      function openURL() {
+        var select = document.getElementById("site");
+        url = select.options[select.selectedIndex].value;
+        window.open(url, "myWin", "left=300,top=300,width=1000,height=800");
+      }
+    </script>
 </head>
 
 <body>
+    
     <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
     <h3>가장 좋아하는 가수 3</h3>
     <hr>
     <form>
-        아이유 : <input type="text" list="iu"><br>
+        <!-- 아이유 : <input type="text" list="iu"><br>
             <datalist id="iu">
-				<option value="겨울잠">
+                <select id="site" onchange="openURL();">
+				<option value="겨울잠"><a href="https://www.youtube.com/watch?v=40Iqv8M7Jsk"></a></option>
 				<option value="시간의 바깥">
 				<option value="무릎">
-			</datalist> 
+                </select>
+			</datalist>  -->
+            아이유
+            <select id="site" onchange="openURL();">
+                
+                <option value="IU1.html">겨울잠 </option>
+                <option value="IU2.html">시간의 바깥 </option>
+                <option value="IU3.html">무릎 </option>
+              </select>
             <br>
             <audio controls>
                 <source src="media/겨울잠.mp3" type="audio/mp3">
@@ -41,12 +61,19 @@
             </audio>
                무릎
          <hr>
-        마크툽 : <input type="text" list="mak"><br>
+        <!-- 마크툽 : <input type="text" list="mak"><br>
             <datalist id="mak">
 				<option value="찰나가 영원이 될때">
                 <option value="비로소 너에게 도착함">
                 <option value="별을 담은 시">
-            </datalist>
+            </datalist> -->
+            마크툽
+            <select id="site" onchange="openURL();">
+                
+                <option value="Mak1.html">찰나가 영원이 될때 </option>
+                <option value="Mak2.html">비로소 너에게 도착했다 </option>
+                <option value="Mak3.html">별을 담은 시 </option>
+              </select>
             <br>
             <audio controls>
            <source src="media/찰나가 영원이 될떄.mp3" type="audio/mp3">
@@ -63,12 +90,19 @@
                   </audio>
                      별을 담은 시
             <hr>
-        백예린 : <input type="text" list="yerin"><br>
+        <!-- 백예린 : <input type="text" list="yerin"><br>
             <datalist id="yerin">
 				<option value="rest">
 				<option value="lovelovelove">
 				<option value="not a gril">
-			</datalist>
+			</datalist> -->
+            백예린
+            <select id="site" onchange="openURL();">
+                
+                <option value="Baek1">rest </option>
+                <option value="Baek2.html">lovelovelove </option>
+                <option value="Baek3.html">not a girl </option>
+              </select>
             <br>
             <audio controls>
            <source src="media/Rest.mp3" type="audio/mp3">
