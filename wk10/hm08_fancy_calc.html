@@ -83,6 +83,20 @@
       function isInteger(x) {
         return Math.floor(x) === x;
       }
+      function sqrt(){
+			  document.calc.result.value = Math.pow(document.calc.result.value,1/2);
+		  }
+
+          function hex() {
+        var expression_num = parseInt(eval(expression));
+          expression = expression_num.toString(16);
+        document.getElementById("display").value = expression;
+      }
+    
+      function pow(all){
+       all.value = Math.pow(all.value,2);
+      }
+
     </script>
   </head>
 
@@ -96,8 +110,9 @@
 
       <h3>JS calculator</h3>
       <hr />
-      <form>
-        <input id="display" value="0" size="18" />
+      <form name="calc">
+        
+        <input id="display" value="0" size="18" name="result" />
         <br />
         <input id="clear"
           type="button"
@@ -105,7 +120,7 @@
           onclick="clearDisplay()"
           
         />
-        <input id="del" type="button" value="       &larr;       " onclick="del()" />
+        <input id="dle" type="button" value="      &larr;      " onclick="del()" />
         
         <input class="op" type="button" value="   %   " onclick="add('%')" />
         <br>
@@ -137,9 +152,11 @@
           onclick="compute()"
         />
         <input class="op" type="button" value="    +    " onclick="add('+')" />
-        
-        
-        
+        <br>
+        <input class="op" type="button" value="      &radic;     " onclick="sqrt()" />
+        <input class="op" type="button" value="      x&sup2      " onclick="pow(this.form.display)" />
+      
+        <input class="op" type="button" value="    hex      " onclick="hex()" />
       </form>
       <h4>COMSI, HM08</h4>
     </div>

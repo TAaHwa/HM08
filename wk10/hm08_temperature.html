@@ -4,13 +4,12 @@
   <head>
     <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
     <meta charset="utf-8" />
-    <title>hmnn : Javascript</title>
+    <title>hm11 : Javascript</title>
     <style></style>
     <script>
-      function c2f(c){
-        for (c = 0; c <= 50; c = c + 5) {
-          document.write( c +(c * 9.0) / 5 + 32);
-        }
+      function f2c(c) {
+        f = (9 * c) / 5 + 32;
+        return f;
       }
     </script>
   </head>
@@ -26,16 +25,11 @@
         <td>화씨온도</td>
       </tr>
       <script>
-        for (celsius = 0; celsius <= 50; celsius = celsius + 5) {
+        for (celsius = 0; celsius < 50; celsius = celsius + 5) {
           document.write(
-            "<tr><td>" +
-              celsius +
-              "</td><td>" +
-              ((celsius * 9.0) / 5 + 32) +
-              "</td></tr>"
+            "<tr><td>" + celsius + "</td><td>" + f2c(celsius) + "</td></tr>"
           );
         }
-        
       </script>
     </table>
   </body>
