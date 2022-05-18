@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            프로토타입으로 객체 만들기
+        </title>
+<script>
+    //프로토타입 만들기 : 생성자 함수 작성
+    function Account(owner,code,balance){
+    //프로퍼티 만들기
+    this.owner = owner;   //계좌 주인 프로퍼티 만들기
+    this.code = code;     //계좌 코드 프로퍼티 만들기
+    this.balance = balance; // 잔액 프로퍼티 만들기
+
+    //메소드 만들기
+    this.inquiry = function() {return this.balance;}
+    this.deposit = function(money){this.balance += money;}
+    this.withdraw = function (money) { //예금 인출, money는 인출하는 액수
+       //money가 balance보다 작다고 가정
+       this.balance -= money;
+       return money; //있어도 되고 없어도 됨
+    }
+}
+</script>
+    </head>
+<body>
+    <h3>Account 프로토타입 만들기</h3>
+    <hr>
+<script>
+    //new 연산자 이용하여 게좌 객체 생성
+    var account = new Account("황기태","111",35000);
+
+    //객체 활용
+    document.write("account:");
+    document.write(account.owner+",");
+    document.write(account.code + ",");
+    document.write(account.balance+ "<br>");
+
+    account.deposit(10000); //10000원 저금
+    document.write("10000원 저금 후 잔액은"+account.inquiry() + "<br>");
+    account.withdraw(5000); //5000원 인출
+    document.write("5000원 인출 후 잔액은" + account.inquiry()+"<br><hr>")
+   
+    var hm08 = new Account("김태화","20192569",1350000);
+
+//객체 활용
+document.write("hm08:");
+document.write(hm08.owner+",");
+document.write(hm08.code + ",");
+document.write(hm08.balance + "<br>");
+
+hm08.deposit(2000000); //2000000원 저금
+document.write("2000000원 저금 후 잔액은"+hm08.inquiry() + "<br>");
+hm08.withdraw(500000); //500000원 인출
+document.write("500000원 인출 후 잔액은" + hm08.inquiry()+"<br><hr>")
+    
+   
+</script>
+</body>
+</html>
