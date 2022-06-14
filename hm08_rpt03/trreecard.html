@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm08 : X-MAS</title>
+		<style>
+            body{background-color: black;}
+
+@keyframes textC{
+    0%{color: aliceblue;}
+    30%{color: pink;}
+    100%{color: bisque;}
+}
+div{
+    animation-name:textC;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#menubar {
+				background: rgba(20, 187, 117, 0.356);
+			}
+			#menubar ul{/* 여백과 패딩 모두 0 */
+				margin: 0;
+				padding: 0;
+				width: 567px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+			}
+			#menubar ul li{
+				display: inline; /* 새 줄로 넘어가지 않게 */
+				list-style-type: none;	/* 마커 삭제 */
+				padding: 0px 15px; /* top=bottom=0, left=right=15px */
+			}
+			#menubar ul li a{
+				color: white;
+				text-decoration: none; /* 링크 보이지 않게 */
+			}
+			#menubar  ul li a:hover{
+				color: violet; /* 마우스 올라 갈 때 색 */
+			}
+            body{
+                background-image:url(https://d3mcojo3jv0dbr.cloudfront.net/2018/12/16/22/36/35ce3466a323b7c46f2a6bbae354b05d.gif?w=600&h=300&q=65) ;
+            }
+  
+			
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+        <nav id="menubar">
+            <ul>
+                <li>
+                    <a href="https://ko.wikipedia.org/wiki/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4" target="left">ChristMas</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/DFH2NpzgQ2E" target="_blank">Carols</a>
+                </li>
+                <li>
+                    <a href="https://ko.wikipedia.org/wiki/%EC%82%B0%ED%83%80%ED%81%B4%EB%A1%9C%EC%8A%A4" target="left">Santa</a>
+                </li>
+                <li>
+                    <a href="https://dinorunner.com/ko/santa/" target="left">Santa Game</a>
+                
+                <li>
+                    <a href="tree.html" target="left">Main</a>
+                </li>
+            </ul>
+           
+        </nav>
+		<hr>
+		<iframe src="tree.html" name="left" width="600" height="700" name="left" style="border:0" ></iframe>
+		<iframe width="600" height="700" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=11F553BA72B65556DE758880C6DFA2B1982A&outKey=V124a9c0022826d9739f60e798e7b382bb0e8941a7973670fa9df0e798e7b382bb0e8" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>
+       
+		
+        <audio src="media/Someday at ChritMas.mp3"controls ></audio>
+
+		
+	    
+	</body>
+
+</html>

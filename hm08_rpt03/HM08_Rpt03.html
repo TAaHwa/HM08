@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm08 : 나는 누구인가?</title>
+		<style>
+		
+        
+#menubar {
+				background: gray;
+			}
+			#menubar ul{/* 여백과 패딩 모두 0 */
+				margin: 0;
+				padding: 0;
+				width: 800px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+			}
+			#menubar ul li{
+				display: inline; /* 새 줄로 넘어가지 않게 */
+				list-style-type: none;	/* 마커 삭제 */
+				padding: 0px 15px; /* top=bottom=0, left=right=15px */
+			}
+		
+			#menubar ul li a{
+				color: white;
+				text-decoration: none; /* 링크 보이지 않게 */
+			}
+			#menubar  ul li a:hover{
+				color: violet; /* 마우스 올라 갈 때 색 */
+			}
+            body{
+                background-image:url(https://i.ytimg.com/vi/D1EOlH0gWik/maxresdefault.jpg) ;
+            }
+  
+            .header {
+				
+				height: 10%;
+                background-image:url(https://st4.depositphotos.com/2126555/20787/i/1600/depositphotos_207870468-stock-photo-gray-grunge-brick-wall-texture.jpg);
+                
+			}
+            .section {
+				width: 1000%;
+				height: 50%;
+				float: left;
+				background-image:url(https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/1PXk/image/ZiPTwcdTseKaozjVy7Y2JlWg0FI.JPG);
+			}
+			.footer {
+				width: 100%;
+				height: 30%;
+				clear: both;
+				background-image:url(https://th.bing.com/th/id/OIP.LZvpsKdinNg2K5G-Fui0EAHaE0?pid=ImgDet&rs=1) ;
+			}
+
+			#song {
+				position: fixed;
+				bottom: 10px;
+				right: 100px;
+				width: 200px;
+				padding: 10px;
+				
+			}
+
+		</style>
+		<script>
+		function getKorDateString() {
+        var time = new Date().getTime();
+        // 32400000 is (GMT+9 Korea, GimHae)
+        // for your timezone just multiply +/-GMT by 3600000
+        var datestr = new Date(time + 32400000)
+          .toISOString()
+          .replace(/T/, " ")
+          .replace(/Z/, "");
+        return datestr;
+      }
+		</script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+        <header class="header">
+            <h1><a href="https://github.com/TAahwa" target="_blank" style="color:black;" >HM08_나는 누구인가?</a></h1>
+        </header>
+        <nav id="menubar">
+	
+            <ul>
+                <li>
+                    <a href="day.html" target="myframe">나의 하루</a>
+                </li>
+                <li>
+                    <a href="best3.html" target="myframe">My Best 3</a>
+                </li>
+                <li>
+                    <a href="form.html" target="myframe">동호회 모집</a>
+                    
+                </li>
+                <li>
+                    <a href="image.html" target="myframe">X-Mas 파티 초대장</a>
+				</li>
+				<li>
+					<a href="info.html" target="myframe">My Info</a>
+                </li>
+                
+            </ul>
+           
+        </nav>
+
+        <section class="section" id="main">
+			<script>
+				var now = new Date();
+				var now_Kor = getKorDateString();
+				// 현재 시간 값을 가진 Date 객체 생성
+				document.write("현재 시간 : " + now.toUTCString() + "<br><hr>");
+				
+			  </script>
+			<article>
+				<iframe src="info.html" name="myframe" width="1500" height="580">
+
+				</iframe>
+
+			</article>
+
+		</section>
+
+
+        <footer class="footer">
+			<p><strong>HM08 김태화</strong></p>
+			<div id="song">
+				
+				<audio src="media/dhruv.mp3" controls autoplay></audio>
+				<br><a> double take-dhruv</a>
+			</div>
+		</footer>
+	    <p id="firstP" style="color:blue" onclick="">
+			 <span style="color:red">에브리타임 시간표</span>
+		  </p>
+		
+	</body>
+
+</html>

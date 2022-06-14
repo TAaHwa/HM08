@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm08 : CSS3 animation</title>
+		<style>
+            @keyframes textColorAnimation {
+			0% { color : #A4B9C6; }
+			30% { color : #E8EDF1;}
+			100% { color : #BEAED4;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+			}
+			input[type=text] {/* text 창에만 적용 */
+				color: black;
+			}
+			
+			
+			label {
+				display: block; /* 새 라인에서 시작 */
+				padding: 10px;
+			}
+			
+            input[type=text]:focus {/* 포커스 받을 때 */
+				font-size:100% ;
+			}
+		
+			
+            #menubar ul{/* 여백과 패딩 모두 0 */
+				background-color:#A4B9C6 ;
+			}
+            #menubar ul{/* 여백과 패딩 모두 0 */
+				margin: 0;
+				padding: 0;
+				width: 800px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+			}
+			#menubar ul li{
+				display: inline; /* 새 줄로 넘어가지 않게 */
+				list-style-type: none;	/* 마커 삭제 */
+				padding: 0px 15px; /* top=bottom=0, left=right=15px */
+			}
+			#infor{
+				width: 500px;
+			}
+
+            body{
+                background-color:#E8EDF1 ;
+            }
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+        <nav id="menubar">
+            <ul>
+                <li>
+                    <a href="mung.html" target="myframe">동호회 소개</a>
+                </li>
+                <li>
+                    <a href="https://map.kakao.com/?map_type=DEFAULT&map_hybrid=false&q=%EC%9D%B8%EC%A0%9C%EB%8C%80%ED%95%99%EA%B5%90&from=total" target="myframe">동호회 위치</a>
+                </li>
+               
+				<li>
+					<a href="number.html" target="myframe">고객센터</a>
+                </li>
+				<li>
+					<a href="calc.html" target="myframe">가입비</a>
+                </li>			
+                
+            </ul>
+           
+        </nav>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h2><div style="text-align:center"><span> 동호회 가입하기</span></h2>
+		<hr>
+		<form id="infor">
+			<fieldset>
+				<legend>회원정보</legend>
+			<label> 이름
+				<input type="text" placeholder="김태화">
+				<br>
+			</label>
+
+			<label> 나이
+				<input type="text" placeholder="23">
+			</label>
+			<label> 학번
+				<input type="text" placeholder="20192569">
+			</label>
+            <label> 전화번호
+				<input type="text" placeholder="010-1234-6789">
+			</label>
+			<label> 가입 하고 싶은 이유 <br>				
+				<textarea placeholder="메시지를 남겨주세요"> </textarea> 
+			</label>
+			<label> 
+				   
+                <input type="button" value="확인" onClick="window.open('button.html')">
+					<input value="초기화" type="reset">
+			</label>
+		
+			</fieldset>
+		</form>
+
+
+        <section class="section" id="main">
+
+			<article>
+				<iframe src="" name="myframe" width="1300" height="500">
+
+				</iframe>
+
+			</article>
+
+		</section>
+	</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hm08 : 나의 하루</title>
+		<style>
+            #menubar ul{/* 여백과 패딩 모두 0 */
+				margin: 0;
+				padding: 0;
+				width: 567px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+			}
+			#menubar ul li{
+				display: inline; /* 새 줄로 넘어가지 않게 */
+				list-style-type: none;	/* 마커 삭제 */
+				padding: 0px 15px; /* top=bottom=0, left=right=15px */
+			}
+            #menubar {
+				background: black;
+            }
+            /* #every {
+				position: fixed;
+				bottom:650px;
+				right: 600px;
+				width: 100px;
+				height: 30px;
+				
+			} */
+		</style>
+		<script>
+       function change() {
+        var p = document.getElementById("firstP");
+        p.innerHTML = "나의<img src='media/everytime.png'> 에브리타임";
+      }
+      function startScroll(interval) {
+          setInterval("autoScroll()",interval);
+      }
+
+      function autoScroll() {
+        window.scrollBy(0,10);// 10픽셀 위로 이동
+      }
+        </script>
+	</head>
+
+	<body onload="startScroll(1000)">
+
+        <nav id="menubar">
+            <ul>
+                <li>
+                    <a href="#월" >월요일</a>
+                </li>
+                <li>
+                    <a href="#화" >화요일</a>
+                </li>
+                <li>
+                    <a href="#수" >수요일</a>
+                </li>
+                <li>
+                    <a href="#목" >목요일</a>
+                <li>
+                    <a href="#금" >금요일</a>
+                
+                
+            </ul>
+           
+        </nav>
+
+		<h3>나의 하루</h3>
+		<hr>
+		<ul>
+			<li id="월">
+				월<br>
+                10:00~11:00 : 기상 후 세면세족<br>
+                12:00~13:00 : 점심 식사<br>
+                14:00~18:00 : 드론시뮬레이션 수업<br>
+                18:00~18:30 : 저녁 식사<br>
+                18:30~22:30 : 알바<br>
+                23:00~ : 취침준비 <br><a href="#top">Go top</a>
+			<li id="화">
+                화<br>
+				10:00~11:00 : 기상 후 세면세족<br>
+                12:00~13:00 : 점심 식사<br>
+                14:00~18:00 : 시뮬레이션 개론 수업<br>
+                18:00~18:30 : 저녁 식사<br>
+                18:30~22:30 : 알바<br>
+                23:00~ : 취침준비 <br><a href="#top">Go top</a>            
+               
+             <li id="수">
+                    수<br>
+                    09:00~10:00 : 기상 후 세면세족<br>
+                    11:00~13:00 : 파이썬 활용 수업<br>
+                    13:00~14:00 : 점심 식사<br>
+                    14:00~18:00 : htmL5 수업<br>
+                    18:30~19:30 : 저녁 식사<br>
+                    20:00~21:00 : 운동<br>
+                    23:00~ : 취침 준비<br>
+                    <a href="#top">Go top</a>
+                    
+                
+             <li id="목">
+                        목<br>
+                    07:00~08:00 : 기상 후 세면세족<br>
+                    09:00~13:00 : Java Programing 수업<br>
+                    13:00~14:00 : 점심 식사<br>
+                    14:00~18:00 : 아두이노 수업<br>
+                    18:30~19:30 : 저녁 식사<br>
+                    20:00~21:00 : 운동<br>
+                    23:00~ : 취침 준비<br><a href="#top">Go top</a>
+
+                        <li id="금">
+                            금<br>
+                            10:00~11:00 : 기상 후 세면세족<br>
+                            11:00~12:00 : 점심 식사<br>
+                            13:00~16:00 : 교양 수업<br>
+                            16:30~17:30 : 저녁 식사<br>
+                            18:00~22:30 : 알바<br>
+                            23:00~ : 취침준비<br><a href="#top">Go top</a>
+		</ul>
+        <!-- <div id="every">
+        <img src = "media/everytime.png"><br><a href="#top">Go top</a> 
+    </div> -->
+    <p id="firstP" style="color:blue" onclick="change()">
+         <span style="color:red">에브리타임 시간표</span>
+      </p><a href="#top">Go top</a> 
+	</body>
+
+</html>
