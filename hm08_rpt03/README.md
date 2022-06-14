@@ -53,19 +53,19 @@
   
  -button:버튼 만들기
   
-  -onload
+  -onload:로딩이 완료되면 이밴트 발생
   
-  -autoScroll()
+  -autoScroll():자동으로 스크롤
   
-  -function
+  -function:덧셈,뺄샘 등 다양한 기능을 사용 가능
   
-  -Date()
+  -Date():현재 날짜를 나타낼 때 사용하는 함수
   
-  -getTime()
+  -getTime():현재 시간 함수
   
-  -Array()
+  -Array():배열 생성
   
-  -change(img)
+  -change(img):이미지 변경
   
   
   
