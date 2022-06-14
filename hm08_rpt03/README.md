@@ -1,6 +1,6 @@
-# HM08 두번째 홈피 프로젝트
+# HM08 세번째 홈피 프로젝트
 ## 파일구조 및 설명 
-  -HM08_Rpt02.html:홈페이지
+  -HM08_Rpt03.html:홈페이지
   
   -best3.html:내가 가장 좋아하는 가수3명의 노래3개
   
@@ -52,6 +52,20 @@
  -placeholder태그:텍스트 형식을 보여줌
   
  -button:버튼 만들기
+  
+  -onload
+  
+  -autoScroll()
+  
+  -function
+  
+  -Date()
+  
+  -getTime()
+  
+  -Array()
+  
+  -change(img)
   
   
   
